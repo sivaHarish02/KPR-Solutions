@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Blogs</title>
+</head>
+<body>
+    <h1>All Blogs</h1>
+    <% if (blog.length === 0) { %>
+        <p>No blogs found.</p>
+    <% } else { %>
+        <ul>
+            <% blog.forEach(function(blogItem) { %>
+                <li>
+                    <h2><%= blogItem.title %></h2>
+                    <img src="<%= blogItem.picture %>" alt="Blog Picture">
+                    <p><%= blogItem.content %></p>
+                </li>
+            <% }); %>
+        </ul>
+    <% } %>
+</body>
+</html>

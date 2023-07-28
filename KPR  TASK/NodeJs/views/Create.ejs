@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+<div class="container mt-5" div>
+  <h1>CREATE BLOG</h1>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/create" method="POST">
+            <div class="form-group">
+       
+              <label for="Title">TITLE</label>
+              <input type="text" class="form-control" name="Title" required>
+            </div>
+            <div class="form-group">
+              <label for="Image">IMAGE</label>
+              <input type="file" class="form-control" name="Image" required>
+            </div>
+            <div class="form-group">
+              <label for="Content">CONTENT</label>
+              <input type="text" class="form-control" name="Content" required>
+            </div>
+            <button type="submit" class="btn btn-success">ADD Blog</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  
+
+  </div>
+</div>
+
+<%- include('partials/header') %>
